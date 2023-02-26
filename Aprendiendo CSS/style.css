@@ -1,0 +1,100 @@
+/*Darle propiedades CSS a lo que hicimos en HTML*/
+
+/*Seleccionar todos los elementos de la pagina web*/
+*{
+    margin:  0px;
+    /*Margen interior dentro de una caja*/
+    padding: 0px;
+}
+
+body {
+    /*Cambiar background*/
+    background: rgb(109, 102, 102);
+    /*Cambiar fuente*/
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*seleccionar idnetificador del div*/
+#container{
+    /*Cambiar ancho*/
+    width: 90%;
+    /*Centrar texto*/
+    margin: 0px auto;
+    /*Bordes*/
+    border: 1px solid white;
+}
+
+/*Seleccionar cabecera*/
+header{
+    background: rgba(139, 8, 8, 0.726);
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    /*Alinear texto*/
+    text-align: center;
+    /*Ubicar altura*/
+    line-height: 100px;
+    color: rgba(255, 255, 255, 0.993);
+    border-bottom: 3px dashed white;
+}
+
+nav{
+    background: rgb(172, 172, 172);
+    height:50px;
+    border: 1px solid black;
+}
+
+nav ul li{
+    float:left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+/*Hacer que los elementos queden debajo del nav*/
+.clearfix{
+    clear:both;
+}
+
+#content{
+    float:left;
+    width: calc(80% - 80px);
+    min-height: 500px;
+    background: rgba(139, 8, 8, 0.726);
+    padding:40px
+}
+
+.article{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+.article:first-child{
+    padding-top: 10px;
+    border-top: 1px solid white;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+aside{
+    float:left;
+    width: calc(20% - 20px);
+    min-height: 500px;
+    background: rgb(156, 10, 10);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+footer{
+    background:black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
